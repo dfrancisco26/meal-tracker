@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-
+const addIngredient = document.getElementById('add-ingredient');
 // let state
 
 // set event listeners 
