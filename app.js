@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 const addForm = document.getElementById('add-ingredient');
 const ingredientList = document.getElementById('ingredient-list');
+const removeButton = document.getElementById('remove');
 // let state
 let ingredients = [];
 // set event listeners 
@@ -18,18 +19,27 @@ addForm.addEventListener('submit', (e) => {
 
 });
 
+removeButton.addEventListener('click', () => {
+    removeLast();
+    renderIngredients();
+});
 
 function renderIngredientLI(item) {
     const li = document.createElement('li');
     li.textContent = `${item.ingredient} ${item.qty} ${item.measurement}`;
     return li;
 }
+
 function renderIngredients() {
     ingredientList.textContent = '';
     for (let item of ingredients) {
         const li = renderIngredientLI(item);
         ingredientList.appendChild(li);
     }
+}
+
+function removeLast() {
+    ingredients.pop();
 }
   // get user input
   // use user input to update state 
