@@ -26,17 +26,25 @@ one text. Also, a button to submit the form.-->
         <label>Ingredient
         <input type="text" name="ingredient" id="ingredient">
         </label>
-        <button id="add-ingr" type="submit">Add Ingredient</button>
+        <label>Quantity
+            <input type="number" name="qty" id="qty">
+        </label>
+        <label>Measurement
+            <select name="measurement" id="measurement">
+                <option value="tsp">tsp</option>
+                <option value="cups">cups</option>
+                <option value="grams">grams</option>
+                <option value="mL">mL</option>
+                <option value="tbsp">tbsp</option>
+                </select>
+            </label>
+        <button type="submit">Add Ingredient</button>
     </form>
     </section>
     <section>
 
     </section>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2022 Alchemy Code Lab</div>
-    </footer>
-
     <script type="module" src="./app.js"></script>
 </body>
 

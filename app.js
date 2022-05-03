@@ -12,8 +12,9 @@ addForm.addEventListener('submit', (e) => {
         measurement: data.get('measurement'),
     };
     ingredients.push(item);
-    console.log(ingredients);
+    addForm.reset();
 });
+
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
