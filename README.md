@@ -23,4 +23,46 @@ Additional considerations:
   - What arrays might you need? 
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
-- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+
+
+
+To Do List
+Adding Ingredients
+ Make my form
+ Add form event listener (using getElementById)
+ create an ingredient object from the form data
+ push the ingredient onto ingredients array (state)
+ write renderIngredient function
+ write displayIngredients function (calling renderIngredient for each item)
+Removing Ingredients
+ Add my remove button
+ Add event listener to button
+ Remove the last item from the ingredients array
+ Call displayIngredients
+Save Meal Section
+HTML Elements
+Heading
+Save button
+Meal name input
+Event(s)
+Save button click
+State
+Array of Meals with the following structure:
+{
+  name: 'Black Bean Salad',
+  ingredientCount: 2
+}
+Functions
+renderMeal - return an <li> with the meal info
+displayMeals - clears the list of meals, loops through the state and calls renderMeal for each meal in state
+To Do List
+ Add input and button html
+ Add button event listener
+ Create the meal object using the input value as well as the current list of ingredients
+ Push the meal object onto the meals array
+ Clear out the ingredients state and call displayIngredients
+ Write our renderMeal function
+ Write out displayMeals function (calling renderMeal for each item in the meals array)
+ Call displayMeals

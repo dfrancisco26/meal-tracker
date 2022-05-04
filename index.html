@@ -19,54 +19,44 @@
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
-        </section>
+    <div id="top-sections">
+    <section class="add-box">
+        <h1>Add Ingredients</h1>
+    <form id = 'add-ingredient'>
+        <label>Ingredient
+        <input type="text" name="ingredient" id="ingredient">
+        </label>
+        <label>Quantity
+            <input type="number" name="qty" id="qty">
+        </label>
+        <label>Measurement
+            <select name="measurement" id="measurement">
+                <option value="tsp">tsp</option>
+                <option value="cups">cups</option>
+                <option value="grams">grams</option>
+                <option value="mL">mL</option>
+                <option value="tbsp">tbsp</option>
+                </select>
+            </label>
+        <button id="addButton" type="submit">Add Ingredient</button>
+    </form>
+    </section>
+    <section class="ingredient-list">
+<div class="ingredient-list">
+        <ul id="ingredient-list"></ul>
+    </div>
+        <button id="remove">Remove Last Ingredient</button>
+    </section>
+    </div>
+    <section class="bottom-section">
+        <h1>Save Meal</h1>
+        <label>Meal Name<input type="text" name="meal" id="meal">
+        </label>
+        <button id="save-meal">Save Meal</button>
+        <h1>MEALS</h1>
+        <ul id="meal-list"></ul>
+    </section>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
-    </footer>
-
     <script type="module" src="./app.js"></script>
 </body>
 
