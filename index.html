@@ -19,9 +19,8 @@
         </div>
     </header>
     <main>
-<!--We need a form with three inputs, one select, one number,
-one text. Also, a button to submit the form.-->
-    <section>
+    <div id="top-sections">
+    <section class="add-box">
         <h1>Add Ingredients</h1>
     <form id = 'add-ingredient'>
         <label>Ingredient
@@ -39,18 +38,22 @@ one text. Also, a button to submit the form.-->
                 <option value="tbsp">tbsp</option>
                 </select>
             </label>
-        <button type="submit">Add Ingredient</button>
+        <button id="addButton" type="submit">Add Ingredient</button>
     </form>
-    <div class="ingredient-list">
+    </section>
+    <section class="ingredient-list">
+<div class="ingredient-list">
         <ul id="ingredient-list"></ul>
     </div>
         <button id="remove">Remove Last Ingredient</button>
     </section>
-    <section>
+    </div>
+    <section class="bottom-section">
         <h1>Save Meal</h1>
         <label>Meal Name<input type="text" name="meal" id="meal">
         </label>
         <button id="save-meal">Save Meal</button>
+        <h1>MEALS</h1>
         <ul id="meal-list"></ul>
     </section>
     </main>

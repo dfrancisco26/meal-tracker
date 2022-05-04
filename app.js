@@ -38,7 +38,7 @@ saveMeal.addEventListener('click', () => {
 
 function renderIngredientLI(item) {
     const li = document.createElement('li');
-    li.textContent = `${item.ingredient} ${item.qty} ${item.measurement}`;
+    li.textContent = `${item.qty} ${item.measurement} of ${item.ingredient}`;
     return li;
 }
 
@@ -60,7 +60,7 @@ function renderMeals() {
 
 function renderMealLI(meal) {
     const li = document.createElement('li');
-    li.textContent = `${meal.name} ${meal.count}`;
+    li.textContent = `${meal.name} - ${meal.count} ingredients`;
     return li;
 }
 
